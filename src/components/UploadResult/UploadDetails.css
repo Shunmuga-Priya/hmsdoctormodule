@@ -1,0 +1,33 @@
+.ant-tabs-bar {
+ border-bottom: 0px !important;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+    color: #86b149 !important;
+}
+.ant-tabs-nav {
+    font-size: 2.5rem !important;
+    
+}
+.ant-tabs-nav .ant-tabs-tab:active {
+    color: #096dd9;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+    color: none !important;
+}
+.ant-tabs-ink-bar{
+    height:4px !important;
+    background-color: #86b149 !important;
+
+}
+.ant-tabs-nav-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px !important;
+}
+.ant-tabs-nav-container{
+    border-bottom: 1.5px dashed #DDD;
+}
+.ant-tabs-nav .ant-tabs-tab{
+    padding:16px 25px !important
+}

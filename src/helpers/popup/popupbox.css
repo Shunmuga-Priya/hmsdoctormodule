@@ -1,0 +1,103 @@
+/*.MuiDialogTitle-root 
+{
+	padding:0px !important;
+}*/
+.MuiDialog-paperWidthSm
+{
+   width:100% !important;
+}
+.addtrainees_details
+{
+	font-family: "Roboto";
+	display: flex;
+	justify-content: space-between;
+}
+.details_mode
+{
+	color:#ccc;
+	font-family: "Roboto";
+	font-size: 2rem !important;
+		margin-bottom: 0rem !important;
+}
+.age_details
+{
+	color:#ccc;
+	font-size: 15px;
+	margin-bottom: 0px !important;
+	}
+	.package_details
+	{
+		display: flex;
+		color:#ccc;
+		font-size: 15px;
+		width:50%;
+			font-family: "Roboto";
+		justify-content: space-between;
+	}
+	.package_cancel_details
+	{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.package-cancel_button
+{
+    color: red !important;
+    border:1px solid  red !important;
+    font-size: 20px !important;
+    font-family: "Roboto";
+
+    background-color: #f5dcead1 !important;
+  
+}
+.trainee_image_container
+{
+	display:flex;
+	width:100%;
+	height:100%;
+}
+.trainee_image
+{
+	width:100%;
+	height:100%;
+}
+.trainee_image_div
+{
+	width:100%;
+	height:auto;
+}
+.divider
+{
+	padding: 20px !important
+}
+.MuiDivider-root
+{
+	height:2px !important;
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+.addtrainee_gridcontainer
+{
+	padding:20px;
+}
+.package_details_list
+{
+	width:50%;
+	display: inline-flex;
+	justify-content:flex-end;
+	align-items: center;
+	color:black;
+	font-family: "Roboto";
+	font-size: 15px;
+}
+.package_details_container
+{
+	display:flex;
+	width:100%;
+	   font-family: "Roboto";
+}
+/*  .MuiDialogTitle-root 
+{
+   padding:none !important;
+}*/
