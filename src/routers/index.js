@@ -12,7 +12,7 @@ import MediaUploadsMaster from '../components/MediaUploads/MediaUploadsMaster';
 import ManagePackageMaster from '../components/ManagePackage/ManagePackageMaster';
 import UploadMaster from '../components/UploadResult/UploadMaster';
 import Advertisement from "../components/AdvertisementBooking/AdvertisementMaster";
-import Deals from "../components/Deals/DealsMaster";
+import DealsMaster from "../components/Deals/DealsMaster";
 import Cancelpayment from "../components/CancelPayment/CancelPayment";
 import Paymentreceived from "../components/PaymentReceived/PaymentReceived";
 import ResetPassword from "../components/HealthCheckupLogin/ResetPassword";
@@ -32,7 +32,7 @@ const AppRouter = () => (
              <Route path="/mediauploads" component={MediaUploadsMaster}/>
              <Route path="/uploadresults" component={UploadMaster} />
              <Route path="/advertise" component={Advertisement} />
-             <Route path="/deals" component={Deals} />
+             <Route path="/deals" component={DealsMaster} />
              <Route path="/cancelpayment" component={Cancelpayment}/>
              <Route path="/paymentreceived" component={Paymentreceived} />
          </Switch>

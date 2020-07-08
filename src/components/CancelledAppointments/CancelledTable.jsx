@@ -2,10 +2,12 @@ import React from "react";
 import Tablecomponent from "../../helpers/TableComponent/TableComp";
 import Modalcomp from "../../helpers/ModalComp/Modalcomp";
 import "./CancelledTable.css";
-
+import axios from "axios";
+import dateFormat from 'dateformat'
+import Moment from 'react-moment';
 class CancelledTable extends React.Component {
   state = {
-    openview: false,
+    openview: false,  
   };
 
   createData = (parameter) => {
@@ -30,7 +32,11 @@ class CancelledTable extends React.Component {
   closemodal = () => {
     this.setState({ openview: false, editopen: false });
   };
+  componentDidMount(){
+   this.props.DayDataApi()
+  }
   render() {
+    console.log(this.state.CancelGetData,"dfggh")
     return (
       <div>
         <Tablecomponent
@@ -39,60 +45,11 @@ class CancelledTable extends React.Component {
             { id: "customer", label: "Customer" },
             { id: "package", label: "Package" },
             { id: "bookeddate", label: "Booked Date" },
-
             { id: "date", label: "Cancelled Date" },
             { id: "time", label: "Time" },
           ]}
-          rowdata={[
-            this.createData({
-              customer: "ABDUL-KHAAFID",
-              package: "Good Health Premium Package",
-              bookeddate: "17 Dec 2019",
-
-              date: "18 Dec 2019",
-              time: "09:00 AM",
-            }),
-            this.createData({
-              customer: "AHMED",
-              package: "Health Premium Package",
-              bookeddate: "17 Dec 2019",
-
-              date: "18 Dec 2019",
-              time: "09:30 AM",
-            }),
-            this.createData({
-              customer: "IRFAN",
-              package: "Health Premium ",
-              bookeddate: "16 Dec 2019",
-
-              date: "17 Dec 2019",
-              time: "09:45 AM",
-            }),
-            this.createData({
-              customer: "ZAINAB",
-              package: "Good Health Premium Package",
-              bookeddate: "16 Dec 2019",
-
-              date: "17 Dec 2019",
-              time: "10:05 AM",
-            }),
-            this.createData({
-              customer: "SAMREEN",
-              package: "Premium Package",
-              bookeddate: "15 Dec 2019",
-
-              date: "16 Dec 2019",
-              time: "10:47 AM",
-            }),
-            this.createData({
-              customer: "RASHID",
-              package: "Gold Premium Package",
-              bookeddate: "14 Dec 2019",
-
-              date: "15 Dec 2019",
-              time: "11:15 AM",
-            }),
-          ]}
+          
+          rowdata={this.props.wk_mh_yr_Data && this.props.wk_mh_yr_Data}
           tableicon_align={"cell_eye"}
           VisibilityIcon="close"
           DeleteIcon="close"
@@ -100,6 +57,7 @@ class CancelledTable extends React.Component {
           UploadIcon="close"
           GrandTotal="close"
           Workflow="close"
+          props_loading={this.props.props_loading}
           modelopen={(e) => this.modelopen(e)}
         />
         {/* <div className="docrevenue_total">

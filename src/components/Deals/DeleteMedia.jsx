@@ -10,8 +10,8 @@ export default class DeleteMedia extends Component {
                 <Grid container>
                     <Grid item xs={12} md={12} className="media_title_container">
                       <div className="mediadelete_container"><p className="delete_para">Are You Sure Want to Delete This Record?</p></div>
-                           <div className="mediadelete_container"><Button className="detete_no">No</Button>
-                           <Button className="detete_yes">Yes</Button></div>
+                           <div className="mediadelete_container"><Button className="detete_no" onClick={this.props.closeDeleteModel}>No</Button>
+                           <Button className="detete_yes" onClick={this.props.deleteitem}>Yes</Button></div>
                     </Grid>
                 </Grid>
             </div>

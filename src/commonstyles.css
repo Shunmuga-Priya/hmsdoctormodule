@@ -55,6 +55,7 @@
 .icon_head {
   display: flex;
   padding-right: 3px;
+  cursor: pointer;
 }
 @media screen and (max-width: 990px) {
   .dashboard_header .dashboard_title {

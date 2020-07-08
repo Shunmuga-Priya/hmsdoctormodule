@@ -8,6 +8,7 @@ import { Input, Select, Icon } from "antd";
 import dateFormat from "dateformat";
 import Paper from "@material-ui/core/Paper";
 const current_date = dateFormat(new Date(), "dd mmm yyyy");
+
 export default class ManagePackageMaster extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,7 @@ export default class ManagePackageMaster extends Component {
     return (
       <div>
         <Paper>
-        <div className="dashboard_header">
+        {/* <div className="dashboard_header">
           <div className="dashboard_title">Manage Package</div>
 
           <div style={{ fontSize: "16px" }}>
@@ -47,11 +48,11 @@ export default class ManagePackageMaster extends Component {
               onClick={this.handleClickopen}
             />
           </div>
-        </div>
+        </div> */}
 
         <ManagePackageTable />
         </Paper>
-        <div className="Upload-modal-container">
+        {/* <div className="Upload-modal-container">
           <Modalcomp
             visible={this.state.open}
             closemodal={this.handleClickclose}
@@ -62,7 +63,7 @@ export default class ManagePackageMaster extends Component {
               closemodal={this.handleClickclose}
             />
           </Modalcomp>
-        </div>
+        </div> */}
       </div>
     );
   }

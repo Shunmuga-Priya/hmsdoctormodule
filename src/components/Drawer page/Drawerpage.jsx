@@ -53,14 +53,17 @@ import profile from "../../Images/profile.svg";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DashboardMaster from "../../components/Dashboard/DashboardMaster";
-import AppointmentMaster from "../../components/AppointmentsHistory/AppointmentMaster";
+// import AppointmentMaster from "../../components/AppointmentsList/AppointmentMaster";
+import AppointmentMaster from "../../components/AppointmentsList/AppointmentMaster"
 import RevenueMaster from "../../components/Revenue/RevenueMaster";
+// import CancelledDashboard from "../../components/CancelledAppointments/CancelledDashboard";
+// import CancelledDashboard from "../../components/CancelledAppointments/CancelledDashboard";
 import CancelledDashboard from "../../components/CancelledAppointments/CancelledDashboard";
-import ManagePackageMaster from "../../components/ManagePackage/ManagePackageMaster";
+import ManagePackageMaster from "../../components/ManagePackage/ManagePackageMaster"
 import MediaUploadsMaster from "../../components/MediaUploads/MediaUploadsMaster";
 import UploadMaster from "../../components/UploadResult/UploadMaster";
 import Advertisement from "../../components/AdvertisementBooking/AdvertisementMaster";
-import Deals from "../../components/Deals/DealsMaster";
+import DealsMaster from "../../components/Deals/DealsMaster";
 import Cancelpayment from "../../components/CancelPayment/CancelPayment";
 import Paymentreceived from "../../components/PaymentReceived/PaymentReceived";
 import ProfileComp from "../../components/LabProfile/ProfileComp";
@@ -433,7 +436,7 @@ class MiniDrawer extends React.Component {
             />
             <Route
               path={`${this.props.match.path}/deals`}
-              component={Deals}
+              component={DealsMaster}
               exact
             />
             <Route

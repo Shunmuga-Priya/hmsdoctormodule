@@ -9,6 +9,7 @@ import MiniDrawer from "./components/Drawer page/Drawerpage";
 
 import "./App.css";
 
+// export const apiurl = 'http://3.128.18.34:8158/api/v1/';
 export const apiurl = 'http://52.200.251.222:8158/api/v1/';
 
 export default class App extends Component {
